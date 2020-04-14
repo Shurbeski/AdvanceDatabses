@@ -1,0 +1,1168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PostgreSQL - postgres@localhost">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.17">
+    <root id="1">
+      <ServerVersion>12.2</ServerVersion>
+      <StartupTime>1584149362</StartupTime>
+    </root>
+    <database id="2" parent="1" name="postgres">
+      <ObjectId>13318</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>672</IntrospectionStateNumber>
+      <Current>1</Current>
+    </database>
+    <role id="3" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+    </role>
+    <role id="4" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+    </role>
+    <role id="5" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+    </role>
+    <role id="6" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+    </role>
+    <role id="7" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+    </role>
+    <role id="8" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+    </role>
+    <role id="9" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+    </role>
+    <role id="10" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+    </role>
+    <role id="11" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="12" parent="2" name="information_schema">
+      <ObjectId>13018</ObjectId>
+      <StateNumber>282</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="13" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <StateNumber>275</StateNumber>
+      <Owner>postgres</Owner>
+    </schema>
+    <schema id="14" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <StateNumber>276</StateNumber>
+      <Owner>postgres</Owner>
+      <IntrospectionStateNumber>673</IntrospectionStateNumber>
+      <Current>1</Current>
+    </schema>
+    <access-method id="15" parent="2" name="heap">
+      <ObjectId>2</ObjectId>
+      <Comment>heap table access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.heap_tableam_handler</Handler>
+      <HandlerId>3</HandlerId>
+    </access-method>
+    <access-method id="16" parent="2" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="17" parent="2" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="18" parent="2" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="19" parent="2" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="20" parent="2" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="21" parent="2" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <extension id="22" parent="2" name="adminpack">
+      <ObjectId>16384</ObjectId>
+      <Comment>administrative functions for PostgreSQL</Comment>
+      <StateNumber>487</StateNumber>
+      <Version>2.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <extension id="23" parent="2" name="plpgsql">
+      <ObjectId>13304</ObjectId>
+      <Comment>PL/pgSQL procedural language</Comment>
+      <StateNumber>437</StateNumber>
+      <Version>1.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <table id="24" parent="14" name="agent_menager">
+      <ObjectId>24643</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>527</StateNumber>
+    </table>
+    <table id="25" parent="14" name="agent_seller">
+      <ObjectId>24628</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>524</StateNumber>
+    </table>
+    <table id="26" parent="14" name="category">
+      <ObjectId>24697</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>550</StateNumber>
+    </table>
+    <table id="27" parent="14" name="costumer">
+      <ObjectId>24717</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>561</StateNumber>
+    </table>
+    <table id="28" parent="14" name="employee">
+      <ObjectId>24615</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>524</StateNumber>
+    </table>
+    <table id="29" parent="14" name="price">
+      <ObjectId>24810</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>583</StateNumber>
+    </table>
+    <table id="30" parent="14" name="product">
+      <ObjectId>24707</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>558</StateNumber>
+    </table>
+    <table id="31" parent="14" name="product_review">
+      <ObjectId>24756</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>573</StateNumber>
+    </table>
+    <table id="32" parent="14" name="purchase">
+      <ObjectId>24774</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>576</StateNumber>
+    </table>
+    <table id="33" parent="14" name="reklama">
+      <ObjectId>24830</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>667</StateNumber>
+    </table>
+    <table id="34" parent="14" name="seller">
+      <ObjectId>24653</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>530</StateNumber>
+    </table>
+    <table id="35" parent="14" name="stock">
+      <ObjectId>24682</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>547</StateNumber>
+    </table>
+    <table id="36" parent="14" name="store">
+      <ObjectId>24669</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>547</StateNumber>
+    </table>
+    <table id="37" parent="14" name="store_review">
+      <ObjectId>24737</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>570</StateNumber>
+    </table>
+    <table id="38" parent="14" name="talk">
+      <ObjectId>24795</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>651</StateNumber>
+    </table>
+    <table id="39" parent="14" name="televizija">
+      <ObjectId>24822</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>589</StateNumber>
+    </table>
+    <column id="40" parent="24" name="essn">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>527</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="41" parent="24" name="agent_menager_pkey">
+      <ObjectId>24646</ObjectId>
+      <StateNumber>527</StateNumber>
+      <ColNames>essn</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="42" parent="24" name="agent_menager_pkey">
+      <ObjectId>24647</ObjectId>
+      <StateNumber>527</StateNumber>
+      <ColNames>essn</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>agent_menager_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="43" parent="24" name="fk_emp1">
+      <ObjectId>24648</ObjectId>
+      <StateNumber>527</StateNumber>
+      <ColNames>essn</ColNames>
+      <RefTableId>24615</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>employee</RefTableName>
+      <RefKeyName>employee_pkey</RefKeyName>
+      <RefColNames>essn</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="44" parent="25" name="essn">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>524</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="45" parent="25" name="essn_responsible">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>524</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="46" parent="25" name="agent_seller_pkey">
+      <ObjectId>24631</ObjectId>
+      <StateNumber>524</StateNumber>
+      <ColNames>essn</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="47" parent="25" name="agent_seller_pkey">
+      <ObjectId>24632</ObjectId>
+      <StateNumber>524</StateNumber>
+      <ColNames>essn</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>agent_seller_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="48" parent="25" name="fk_emp2">
+      <ObjectId>24633</ObjectId>
+      <StateNumber>524</StateNumber>
+      <ColNames>essn</ColNames>
+      <RefTableId>24615</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>employee</RefTableName>
+      <RefKeyName>employee_pkey</RefKeyName>
+      <RefColNames>essn</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <foreign-key id="49" parent="25" name="fk_responsible2">
+      <ObjectId>24638</ObjectId>
+      <StateNumber>524</StateNumber>
+      <ColNames>essn</ColNames>
+      <RefTableId>24628</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>agent_seller</RefTableName>
+      <RefKeyName>agent_seller_pkey</RefKeyName>
+      <RefColNames>essn</RefColNames>
+      <OnDelete>set-null</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="50" parent="26" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>550</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="51" parent="26" name="name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>550</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="52" parent="26" name="sub_category">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>550</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="53" parent="26" name="category_pkey">
+      <ObjectId>24700</ObjectId>
+      <StateNumber>550</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="54" parent="26" name="category_pkey">
+      <ObjectId>24701</ObjectId>
+      <StateNumber>550</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>category_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="55" parent="26" name="fk_cat">
+      <ObjectId>24702</ObjectId>
+      <StateNumber>550</StateNumber>
+      <ColNames>sub_category</ColNames>
+      <RefTableId>24697</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>category</RefTableName>
+      <RefKeyName>category_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="56" parent="27" name="cssn">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>561</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="57" parent="27" name="payment_type">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>561</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="58" parent="27" name="name">
+      <Position>5</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>561</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="59" parent="27" name="surname">
+      <Position>6</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>561</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="60" parent="27" name="delivery_address">
+      <Position>7</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>561</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="61" parent="27" name="agent_seller_cssn">
+      <Position>8</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>561</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="62" parent="27" name="costumer_pkey">
+      <ObjectId>24723</ObjectId>
+      <StateNumber>561</StateNumber>
+      <ColNames>cssn</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="63" parent="27" name="costumer_pkey">
+      <ObjectId>24724</ObjectId>
+      <StateNumber>561</StateNumber>
+      <ColNames>cssn</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>costumer_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="64" parent="27" name="agent_seller_fk">
+      <ObjectId>24729</ObjectId>
+      <StateNumber>561</StateNumber>
+      <ColNames>agent_seller_cssn</ColNames>
+      <RefTableId>24628</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>agent_seller</RefTableName>
+      <RefKeyName>agent_seller_pkey</RefKeyName>
+      <RefColNames>essn</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="65" parent="28" name="essn">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>518</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="66" parent="28" name="name">
+      <Position>2</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>518</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="67" parent="28" name="surname">
+      <Position>3</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>518</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="68" parent="28" name="e_mail">
+      <Position>4</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>518</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="69" parent="28" name="address">
+      <Position>5</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>518</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="70" parent="28" name="telephone">
+      <Position>6</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>518</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="71" parent="28" name="started_working">
+      <Position>7</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>518</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="72" parent="28" name="last_check_in">
+      <Position>8</Position>
+      <DataType>timestamp|0s</DataType>
+      <StateNumber>518</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="73" parent="28" name="employee_pkey">
+      <ObjectId>24618</ObjectId>
+      <StateNumber>518</StateNumber>
+      <ColNames>essn</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <index id="74" parent="28" name="employee_e_mail_key">
+      <ObjectId>24620</ObjectId>
+      <StateNumber>518</StateNumber>
+      <ColNames>e_mail</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="75" parent="28" name="employee_pkey">
+      <ObjectId>24619</ObjectId>
+      <StateNumber>518</StateNumber>
+      <ColNames>essn</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>employee_pkey</UnderlyingIndexName>
+    </key>
+    <key id="76" parent="28" name="employee_e_mail_key">
+      <ObjectId>24621</ObjectId>
+      <StateNumber>518</StateNumber>
+      <ColNames>e_mail</ColNames>
+      <UnderlyingIndexName>employee_e_mail_key</UnderlyingIndexName>
+    </key>
+    <column id="77" parent="29" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>583</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="78" parent="29" name="code">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>583</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="79" parent="29" name="price">
+      <Position>3</Position>
+      <DataType>real|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>583</StateNumber>
+      <TypeId>700</TypeId>
+    </column>
+    <column id="80" parent="29" name="date_valid_from">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>583</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="81" parent="29" name="date_valid_to">
+      <Position>5</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>583</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="82" parent="29" name="price_pkey">
+      <ObjectId>24813</ObjectId>
+      <StateNumber>583</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <index id="83" parent="29" name="price_code_key">
+      <ObjectId>24815</ObjectId>
+      <StateNumber>583</StateNumber>
+      <ColNames>code</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="84" parent="29" name="price_pkey">
+      <ObjectId>24814</ObjectId>
+      <StateNumber>583</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>price_pkey</UnderlyingIndexName>
+    </key>
+    <key id="85" parent="29" name="price_code_key">
+      <ObjectId>24816</ObjectId>
+      <StateNumber>583</StateNumber>
+      <ColNames>code</ColNames>
+      <UnderlyingIndexName>price_code_key</UnderlyingIndexName>
+    </key>
+    <foreign-key id="86" parent="29" name="fk_p">
+      <ObjectId>24817</ObjectId>
+      <StateNumber>583</StateNumber>
+      <ColNames>code</ColNames>
+      <RefTableId>24707</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>product</RefTableName>
+      <RefKeyName>product_pkey</RefKeyName>
+      <RefColNames>code</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="87" parent="30" name="code">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>558</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="88" parent="30" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>558</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="89" parent="30" name="price">
+      <Position>3</Position>
+      <DataType>real|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>558</StateNumber>
+      <TypeId>700</TypeId>
+    </column>
+    <column id="90" parent="30" name="c_of_production">
+      <Position>4</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>558</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="91" parent="30" name="category_id">
+      <Position>5</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>558</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="92" parent="30" name="product_pkey">
+      <ObjectId>24710</ObjectId>
+      <StateNumber>558</StateNumber>
+      <ColNames>code</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="93" parent="30" name="product_pkey">
+      <ObjectId>24711</ObjectId>
+      <StateNumber>558</StateNumber>
+      <ColNames>code</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>product_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="94" parent="30" name="fk_cat">
+      <ObjectId>24712</ObjectId>
+      <StateNumber>558</StateNumber>
+      <ColNames>category_id</ColNames>
+      <RefTableId>24697</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>category</RefTableName>
+      <RefKeyName>category_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="95" parent="31" name="cssn">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>573</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="96" parent="31" name="code">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>573</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="97" parent="31" name="grade">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>573</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="98" parent="31" name="comment">
+      <Position>4</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>573</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="99" parent="31" name="pk_pr">
+      <ObjectId>24762</ObjectId>
+      <StateNumber>573</StateNumber>
+      <ColNames>cssn
+code</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="100" parent="31" name="pk_pr">
+      <ObjectId>24763</ObjectId>
+      <StateNumber>573</StateNumber>
+      <ColNames>cssn
+code</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>pk_pr</UnderlyingIndexName>
+    </key>
+    <foreign-key id="101" parent="31" name="fr_pr1">
+      <ObjectId>24769</ObjectId>
+      <StateNumber>573</StateNumber>
+      <ColNames>cssn</ColNames>
+      <RefTableId>24717</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>costumer</RefTableName>
+      <RefKeyName>costumer_pkey</RefKeyName>
+      <RefColNames>cssn</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <foreign-key id="102" parent="31" name="fr_pr">
+      <ObjectId>24764</ObjectId>
+      <StateNumber>573</StateNumber>
+      <ColNames>code</ColNames>
+      <RefTableId>24707</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>product</RefTableName>
+      <RefKeyName>product_pkey</RefKeyName>
+      <RefColNames>code</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="103" parent="32" name="essn">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>576</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="104" parent="32" name="code">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>576</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="105" parent="32" name="cssn">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>576</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="106" parent="32" name="count">
+      <Position>4</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>576</StateNumber>
+      <DefaultExpression>1</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="107" parent="32" name="pk_p">
+      <ObjectId>24778</ObjectId>
+      <StateNumber>576</StateNumber>
+      <ColNames>essn
+code
+cssn</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="108" parent="32" name="pk_p">
+      <ObjectId>24779</ObjectId>
+      <StateNumber>576</StateNumber>
+      <ColNames>essn
+code
+cssn</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>pk_p</UnderlyingIndexName>
+    </key>
+    <foreign-key id="109" parent="32" name="fk_p1">
+      <ObjectId>24780</ObjectId>
+      <StateNumber>576</StateNumber>
+      <ColNames>essn</ColNames>
+      <RefTableId>24615</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>employee</RefTableName>
+      <RefKeyName>employee_pkey</RefKeyName>
+      <RefColNames>essn</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <foreign-key id="110" parent="32" name="fk_p2">
+      <ObjectId>24785</ObjectId>
+      <StateNumber>576</StateNumber>
+      <ColNames>code</ColNames>
+      <RefTableId>24707</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>product</RefTableName>
+      <RefKeyName>product_pkey</RefKeyName>
+      <RefColNames>code</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <foreign-key id="111" parent="32" name="fk_p3">
+      <ObjectId>24790</ObjectId>
+      <StateNumber>576</StateNumber>
+      <ColNames>cssn</ColNames>
+      <RefTableId>24717</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>costumer</RefTableName>
+      <RefKeyName>costumer_pkey</RefKeyName>
+      <RefColNames>cssn</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="112" parent="33" name="tv_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>589</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="113" parent="33" name="code">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>589</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="114" parent="33" name="date">
+      <Position>3</Position>
+      <DataType>time|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>664</StateNumber>
+      <TypeId>1083</TypeId>
+    </column>
+    <column id="115" parent="33" name="time">
+      <Position>4</Position>
+      <DataType>time|0s</DataType>
+      <StateNumber>667</StateNumber>
+      <TypeId>1083</TypeId>
+    </column>
+    <index id="116" parent="33" name="pk_r">
+      <ObjectId>24833</ObjectId>
+      <StateNumber>659</StateNumber>
+      <ColNames>tv_id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="117" parent="33" name="pk_r">
+      <ObjectId>24834</ObjectId>
+      <StateNumber>589</StateNumber>
+      <ColNames>tv_id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>pk_r</UnderlyingIndexName>
+    </key>
+    <foreign-key id="118" parent="33" name="fk_r1">
+      <ObjectId>24835</ObjectId>
+      <StateNumber>589</StateNumber>
+      <ColNames>tv_id</ColNames>
+      <RefTableId>24822</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>televizija</RefTableName>
+      <RefKeyName>televizija_pkey</RefKeyName>
+      <RefColNames>id_tv</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <foreign-key id="119" parent="33" name="fk_r2">
+      <ObjectId>24840</ObjectId>
+      <StateNumber>589</StateNumber>
+      <ColNames>code</ColNames>
+      <RefTableId>24707</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>product</RefTableName>
+      <RefKeyName>product_pkey</RefKeyName>
+      <RefColNames>code</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="120" parent="34" name="essn">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>530</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="121" parent="34" name="working_experience">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>530</StateNumber>
+      <DefaultExpression>0</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="122" parent="34" name="essn_responsible">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>530</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="123" parent="34" name="seller_pkey">
+      <ObjectId>24657</ObjectId>
+      <StateNumber>530</StateNumber>
+      <ColNames>essn</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="124" parent="34" name="seller_pkey">
+      <ObjectId>24658</ObjectId>
+      <StateNumber>530</StateNumber>
+      <ColNames>essn</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>seller_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="125" parent="34" name="fk_emp">
+      <ObjectId>24664</ObjectId>
+      <StateNumber>530</StateNumber>
+      <ColNames>essn</ColNames>
+      <RefTableId>24615</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>employee</RefTableName>
+      <RefKeyName>employee_pkey</RefKeyName>
+      <RefColNames>essn</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <foreign-key id="126" parent="34" name="fk_responsible">
+      <ObjectId>24659</ObjectId>
+      <StateNumber>530</StateNumber>
+      <ColNames>essn_responsible</ColNames>
+      <RefTableId>24643</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>agent_menager</RefTableName>
+      <RefKeyName>agent_menager_pkey</RefKeyName>
+      <RefColNames>essn</RefColNames>
+      <OnDelete>set-null</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="127" parent="35" name="store_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>547</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="128" parent="35" name="product_code">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>547</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="129" parent="35" name="count">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>547</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="130" parent="35" name="pk_stock">
+      <ObjectId>24685</ObjectId>
+      <StateNumber>547</StateNumber>
+      <ColNames>store_id
+product_code</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="131" parent="35" name="pk_stock">
+      <ObjectId>24686</ObjectId>
+      <StateNumber>547</StateNumber>
+      <ColNames>store_id
+product_code</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>pk_stock</UnderlyingIndexName>
+    </key>
+    <foreign-key id="132" parent="35" name="fk_stock">
+      <ObjectId>24687</ObjectId>
+      <StateNumber>547</StateNumber>
+      <ColNames>store_id</ColNames>
+      <RefTableId>24669</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>store</RefTableName>
+      <RefKeyName>store_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>set-null</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="133" parent="36" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>533</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="134" parent="36" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>533</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="135" parent="36" name="address">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>533</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="136" parent="36" name="store_pkey">
+      <ObjectId>24675</ObjectId>
+      <StateNumber>533</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="137" parent="36" name="store_pkey">
+      <ObjectId>24676</ObjectId>
+      <StateNumber>533</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>store_pkey</UnderlyingIndexName>
+    </key>
+    <column id="138" parent="37" name="store_id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>567</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="139" parent="37" name="cssn">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>567</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="140" parent="37" name="grade">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>567</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="141" parent="37" name="comment">
+      <Position>4</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>567</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="142" parent="37" name="sr_pk">
+      <ObjectId>24743</ObjectId>
+      <StateNumber>567</StateNumber>
+      <ColNames>store_id
+cssn</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="143" parent="37" name="sr_pk">
+      <ObjectId>24744</ObjectId>
+      <StateNumber>567</StateNumber>
+      <ColNames>store_id
+cssn</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>sr_pk</UnderlyingIndexName>
+    </key>
+    <foreign-key id="144" parent="37" name="sr_fk">
+      <ObjectId>24745</ObjectId>
+      <StateNumber>567</StateNumber>
+      <ColNames>store_id</ColNames>
+      <RefTableId>24669</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>store</RefTableName>
+      <RefKeyName>store_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <foreign-key id="145" parent="37" name="sr_fk1">
+      <ObjectId>24750</ObjectId>
+      <StateNumber>567</StateNumber>
+      <ColNames>cssn</ColNames>
+      <RefTableId>24717</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>costumer</RefTableName>
+      <RefKeyName>costumer_pkey</RefKeyName>
+      <RefColNames>cssn</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <check id="146" parent="37" name="st_grade">
+      <ObjectId>24755</ObjectId>
+      <StateNumber>570</StateNumber>
+      <ColNames>grade</ColNames>
+      <Predicate>(grade &gt;= 0) AND (grade &lt;= 5)</Predicate>
+    </check>
+    <column id="147" parent="38" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="148" parent="38" name="as_essn">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="149" parent="38" name="c_cssn">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="150" parent="38" name="goal">
+      <Position>4</Position>
+      <DataType>varchar(100)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="151" parent="38" name="date">
+      <Position>5</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>580</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="152" parent="38" name="duration">
+      <Position>6</Position>
+      <DataType>time|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>651</StateNumber>
+      <TypeId>1083</TypeId>
+    </column>
+    <index id="153" parent="38" name="talk_pkey">
+      <ObjectId>24798</ObjectId>
+      <StateNumber>651</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="154" parent="38" name="talk_pkey">
+      <ObjectId>24799</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>talk_pkey</UnderlyingIndexName>
+    </key>
+    <foreign-key id="155" parent="38" name="fk_t">
+      <ObjectId>24800</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>as_essn</ColNames>
+      <RefTableId>24628</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>agent_seller</RefTableName>
+      <RefKeyName>agent_seller_pkey</RefKeyName>
+      <RefColNames>essn</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <foreign-key id="156" parent="38" name="fk_t1">
+      <ObjectId>24805</ObjectId>
+      <StateNumber>580</StateNumber>
+      <ColNames>c_cssn</ColNames>
+      <RefTableId>24717</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>costumer</RefTableName>
+      <RefKeyName>costumer_pkey</RefKeyName>
+      <RefColNames>cssn</RefColNames>
+      <OnDelete>cascade</OnDelete>
+      <OnUpdate>cascade</OnUpdate>
+    </foreign-key>
+    <column id="157" parent="39" name="id_tv">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>586</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="158" parent="39" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>586</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="159" parent="39" name="televizija_pkey">
+      <ObjectId>24828</ObjectId>
+      <StateNumber>586</StateNumber>
+      <ColNames>id_tv</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="160" parent="39" name="televizija_pkey">
+      <ObjectId>24829</ObjectId>
+      <StateNumber>586</StateNumber>
+      <ColNames>id_tv</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>televizija_pkey</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>

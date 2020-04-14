@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="790b075f-3fef-4074-b9fd-7290866cc57f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="PostgreSQL - postgres@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="PostgreSQL - postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="PostgreSQL - postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="PostgreSQL - postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="PostgreSQL - postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/projects/default\exportToHTML" />
+  </component>
+  <component name="ProjectId" id="1YZYWPnGAngG9W2F9tIehw7CFTq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DBE.Init.BalloonShown" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:PostgreSQL - postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:PostgreSQL - postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@1f4f27bc" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:PostgreSQL - postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@3d8885e" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:PostgreSQL - postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@48c7594" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:PostgreSQL - postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@79ae8616" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:PostgreSQL - postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@4eb084cc" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:PostgreSQL - postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@436fa0b0" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:PostgreSQL - postgres@localhost" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@5431490e" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="94" key="#Inspections" timestamp="1585670189908">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="94" key="#Inspections/0.0.1536.864@0.0.1536.864" timestamp="1585670189908" />
+    <state x="64" y="75" key="#Live_Templates" timestamp="1585655395021">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="64" y="75" key="#Live_Templates/0.0.1536.864@0.0.1536.864" timestamp="1585655395021" />
+    <state x="361" y="94" key="#SQL_Dialects" timestamp="1585591499001">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="94" key="#SQL_Dialects/0.0.1536.864@0.0.1536.864" timestamp="1585591499001" />
+    <state x="361" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583156961962">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="94" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1583156961962" />
+    <state x="549" y="177" key="FileChooserDialogImpl" timestamp="1583850030584">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="177" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1583850030584" />
+    <state width="1024" height="209" key="GridCell.Tab.0.bottom" timestamp="1585673391311">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="209" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1585673391311" />
+    <state width="1024" height="209" key="GridCell.Tab.0.center" timestamp="1585673391311">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="209" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1585673391311" />
+    <state width="1024" height="209" key="GridCell.Tab.0.left" timestamp="1585673391311">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="209" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1585673391311" />
+    <state width="1024" height="209" key="GridCell.Tab.0.right" timestamp="1585673391311">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1024" height="209" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1585673391311" />
+    <state x="660" y="325" width="315" height="221" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1585669230477">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="660" y="325" width="315" height="221" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.864@0.0.1536.864" timestamp="1585669230477" />
+    <state x="349" y="90" key="com.intellij.database.dbimport.ImportDialog" timestamp="1585672979134">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="349" y="90" key="com.intellij.database.dbimport.ImportDialog/0.0.1536.864@0.0.1536.864" timestamp="1585672979134" />
+    <state x="274" y="138" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1585673125794">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="274" y="138" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.864@0.0.1536.864" timestamp="1585673125794" />
+    <state x="292" y="140" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1583838871767">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="292" y="140" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1536.864@0.0.1536.864" timestamp="1583838871767" />
+    <state x="477" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1585674266014">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="477" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1585674266014" />
+  </component>
+</project>

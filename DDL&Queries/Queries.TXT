@@ -1,0 +1,78 @@
+1)Да се прикажат информациите за продавачите кои немаат ниту еден телефонски број на операторот А1.
+
+SELECT *
+FROM EMPLOYEE
+WHERE TEL LIKE ‘075%’ OR TEL LIKE ‘076%’ OR TEL LIKE ‘077%’ OR TEL LIKE ‘078%’
+//vo eden selekt vo edna kolona, moze i substring mesto like, 
+
+SELECT SUBSTRING(TEL_NUM, 0, 2) AS ExtractString
+FROM Customers;
+WHERE ExtractSTRING = '075' or ExtractSTRING = '076' or ExtractSTRING = '077' or ExtractSTRING = '078'
+
+
+2)Да се прикажат сите коментари за продукти чија оцена е поголема од 2. 
+SELECT PRODUCT_REVIEW.COMMENT
+FROM PRODUCT, PRODUCT_REVIEW
+WHERE PRODUCT_REVIEW.GRADE>2 AND PRODUCT.CODE = PROCUDT_REVIEW.PRODUCT_ID
+** Битно да се знае каква е состојбата за продуктите и кои да се подобрат
+3)За купувачите чиј матичен број почнува на „7“ да се прикажат матичниот број, името, презимето, како и матичниот број, името и презимето на агентот за продажба кај кој е доделен
+
+SELECT C.NAME, C.SURNAME, C.ESSN, 
+FROM COSTUMER C
+WHERE C.CSSE LIKE ‘7%’ AND ( SELECT  E.ESSM, E.NAME, E.SURNAME
+			            FROM EMPLOYEE E
+			            WHERE E.ESSN = C.CSSN)
+
+** за да му овозможиме  награди и изненадувања на вработените за нивниот роденден!
+
+
+
+4) Da se prikaze kolkav e procentot na agentoi_prodavci koi imaat razgovori od vremetraewe od eden chas od site agenti
+
+SELECT (COUNT (DISTINCT TALK.ESSN)/COUNT(EMPLOYEE.ESSN)*100)Procent_agenti
+FROM TALK, EMPLOYEE
+WHERE DURATION > 60
+** Да видиме кој е најупорен за да се награди
+
+5) Da se prikazat korisnicite koi ne ostavile nitu eden komntar nitu edna ocenka za bilo koja prodavnica
+(SELECT CSSN
+FROM COSTUMERS )
+MINUS
+((SELECT CUSTUMER_ID
+FROM PRODUCT_REVIEW)
+INTERSECT
+(SELECT COSTUMER_ID
+FROM STORE_REVIEW))
+** Да може да ги исконтактираме и да извлечеме информации и од нив.
+**Presmetuvanje na izveshatj koi proizvodi se prodavaat najmnogu po televizija(dopolnitelno)
+SELECT P.NAME
+FROM REKLAMA R, PRODUCT P, PURCHASE PU
+WHERE R.PROD_CODE = R.CODE AND P.CODE = PU.PROD_CODE
+GROUP BY R.TV_ID
+OREDER BY PU.COUNT
+ke vidime za sekoja televizija koja produkti se reklamirami tamu i prodazbata na produkti i koi se poveke poprodavanii
+
+**koj kategorii se najinteresni na daden klient i da se preporachaat na klientot koi ne gi kupil a se od istata kategorija, da najdeme vo taa kategorija koj se najprodavani a toj ne gi kupil da gi preporachame 
+(SELECT P.NAME
+ FROM PRODUCT P, CATEGORY C
+ GROUP BY C.ID)
+MINUS
+(SELECT P.NAME
+ FROM PRODUCT P, PURCHASE PU, COSTUMER C, CATEGORY CA
+ WHERE P.CODE=PU.PROD_CODE AND PU.CSSN = C.CSSN AND CA.ID=P.CODE
+ GROUP BY CA.ID)
+
+*** TRIGER ZA PROMENA NA CENATA NA PROIZVODOT
+CREATE TRIGGEER update_product_price
+AFTER UPDATE ON PRICE OF PRODUCT
+FOR EACH ROW
+BEGIN
+UPDATE STORE S
+SET S. TOTALGOODPRICE = S.TOTALGOODSPRICE - OLD.PRICE*(ST*COUNT) +NEW.PRICE*(ST.COUNT)
+FROM STOCK ST
+WHERE OLD.STORE_ID = S.ID AND ST.PRODUCT_CODE = NEW.C_CODE
+END
+** kontrola na cenata na vkupnata stoka vo prodavnicata
+
+							
+							

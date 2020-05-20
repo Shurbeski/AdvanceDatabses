@@ -14,7 +14,7 @@ DECLARE
 BEGIN
 
     PERFORM count_n_product3(old.store_id, old.product_code, old.count );
-    RETURN old;
+    RETURN new;
 
 END;
 $$ LANGUAGE plpgsql;

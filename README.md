@@ -9,4 +9,4 @@ Advance-DataBases project, I am using PostgreSQL for developing the database for
 5) I did the  STORED PROCEDURES AND TRIGGERS FOR MY APPLICATION
 6) The web application, that is serving my database. Just open VisualStudio check the connection string again, and you can tried out.
 
-**The point of the project was optimization. We have all of the business logic in the database, the back-end is free. 
+**The point of the project was optimization. We have all of the business logic in the database, the back-end is free. **

@@ -1,0 +1,36 @@
+﻿@model NapredniBazi.Models.PlaceOrderModel 
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>PlaceOrder</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("PlaceOrder", "product", new { code = Model.Code }))
+        {
+        <div>
+            Stores:
+            <select name="store-id">
+                @foreach (NapredniBazi.Models.StoreDbo store in Model.Stores)
+                {
+                    <option value="@store.Id">@store.Name</option>
+                }
+            </select>
+
+        </div>
+        <div>
+            Quantity:
+            @Html.TextBoxFor(model => model.Quantity)
+            @Html.ValidationMessageFor(model => model.Quantity, "", new { @class = "text-danger" })
+        </div>
+            <input type="submit" value="Place Order"/>
+         }
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+﻿@model NapredniBazi.Models.ProductListingModel
+
+
+    Page:
+    <select id="page-select">
+        @for (int i = 1; i <= Model.Count / Model.Size; i++)
+        {
+            if (i == Model.Page)
+            {
+                <option value="@i" selected>@i</option>
+            }
+            else
+            {
+                <option value="@i">@i</option>
+            }
+        }
+    </select>
+    Page Size:
+    <select id="page-size-select">
+        @foreach (int i in new int[] { 10, 20, 50, 100 })
+        {
+            if (i == Model.Size)
+            {
+                <option value="@i" selected>@i</option>
+            }
+            else
+            {
+                <option value="@i">@i</option>
+            }
+        }
+    </select>
+    <table class="table">
+        <tr>
+            <th>
+                Code
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                Code Of Production
+            </th>
+            <th>
+                Category
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model.Products)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Code)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.C_of_production)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category_id)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { code = item.Code }) |
+                    @Html.ActionLink("Order from storage", "Order", new { code = item.Code })
+                </td>
+            </tr>
+        }
+
+    </table>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script>
+        $(() => {
+            $("#page-select").on('change', (event) => {
+                window.location = `?page=${$("#page-select").val()}&pageSize=${$("#page-size-select").val()}`
+            });
+
+            $("#page-size-select").on('change', (event) => {
+                window.location = `?page=${$("#page-select").val()}&pageSize=${$("#page-size-select").val()}`
+            });
+        })
+    </script>

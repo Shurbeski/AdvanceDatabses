@@ -1,0 +1,43 @@
+﻿@model IEnumerable<NapredniBazi.Models.FrequencyTableDbo> 
+
+    <div>
+
+        @using (Html.BeginForm("FrequencyTable", "statistics", FormMethod.Post))
+        {
+            <input name="cssn" placeholder="Enter user's cssn" />
+            <input type="submit" value="Go" />
+        }
+        @if (Model != null)
+        {
+            <table class="table">
+                <tr>
+                    <th>
+                        Cssn
+                    </th>
+                    <th>
+                        Category Id
+                    </th>
+                    <th>
+                        Percent (%)
+                    </th>
+                    <th></th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CSSN)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Category_idd)
+                        </td>
+                        <td>
+                            @(item.Frequency * 100)
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        }
+    </div>

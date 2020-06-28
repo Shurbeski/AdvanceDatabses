@@ -1,0 +1,71 @@
+﻿@model NapredniBazi.Models.ProductDetailsModel
+
+
+<h3>Stocks for product code: @Model.Code </h3>
+
+Page:
+<select id="page-select">
+    @for (int i = 1; i <= Model.Count / Model.Size; i++)
+    {
+        if (i == Model.Page)
+        {
+            <option value="@i" selected>@i</option>
+        }
+        else
+        {
+            <option value="@i">@i</option>
+        }
+    }
+</select>
+Page Size:
+<select id="page-size-select">
+    @foreach (int i in new int[] { 10, 20, 50, 100 })
+    {
+        if (i == Model.Size)
+        {
+            <option value="@i" selected>@i</option>
+        }
+        else
+        {
+            <option value="@i">@i</option>
+        }
+    }
+</select>
+
+<table class="table">
+    <tr>
+        <th>
+            Store Id
+        </th>
+        <th>
+            Stock size:
+        </th>
+    </tr>
+
+    @foreach (var item in Model.Stocks)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Store_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cnt)
+            </td>
+        </tr>
+    }
+
+</table>
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+<script>
+    $(() => {
+        $("#page-select").on('change', (event) => {
+            window.location = `?code=@Model.Code&page=${$("#page-select").val()}&pageSize=${$("#page-size-select").val()}`
+        });
+
+        $("#page-size-select").on('change', (event) => {
+            window.location = `?code=@Model.Code&page=${$("#page-select").val()}&pageSize=${$("#page-size-select").val()}`
+        });
+    })
+</script>

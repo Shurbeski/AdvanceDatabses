@@ -3,6 +3,7 @@ using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -64,6 +65,50 @@ namespace NapredniBazi.Controllers
                 }
             }
 
+        }
+
+        public ActionResult Details(int code, int page = 1, int pageSize = 20)
+        {
+            using (var connection = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["postgres"].ConnectionString))
+            {
+                connection.Open();
+                int count;
+                using (var command = new NpgsqlCommand($@"SELECT COUNT(product.*) FROM product 
+                                                        WHERE product.code = { code }", connection))
+                {
+                    NpgsqlDataReader reader = command.ExecuteReader();
+                    reader.Read();
+                    if (reader.GetInt32(0) == 0)
+                        return HttpNotFound();
+                    reader.Close();
+                }
+                using (var command = new NpgsqlCommand($@"SELECT COUNT(stock.*) FROM stock 
+                                                        WHERE stock.product_code = { code }
+                                                        AND stock.cnt > 0", connection))
+                {
+                    NpgsqlDataReader reader = command.ExecuteReader();
+                    reader.Read();
+                    count = reader.GetInt32(0);
+                    reader.Close();
+                }
+                using (var command = new NpgsqlCommand($@"SELECT stock.* FROM stock 
+                                                        WHERE stock.product_code = {code}
+                                                        AND stock.cnt > 0
+                                                        LIMIT {pageSize} OFFSET {(page - 1) * pageSize}", connection))
+                {
+                    NpgsqlDataReader reader = command.ExecuteReader();
+                    List<StockDbo> stocks = ReflectionHelper.MapDataToBusinessEntityCollection<StockDbo>(reader);
+                    ProductDetailsModel model = new ProductDetailsModel
+                    {
+                        Count = count,
+                        Page = page,
+                        Size = pageSize,
+                        Stocks = stocks,
+                        Code = code
+                    };
+                    return View(model);
+                }
+            }
         }
 
         [HttpPost]

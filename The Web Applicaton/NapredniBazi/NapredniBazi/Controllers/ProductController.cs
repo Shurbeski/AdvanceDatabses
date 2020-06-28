@@ -50,7 +50,7 @@ namespace NapredniBazi.Controllers
                 using (var command = new NpgsqlCommand($@"SELECT store.* FROM store, stock 
                                                         WHERE store.id = stock.store_id 
                                                             AND stock.product_code = {code}
-                                                            AND cnt > 0
+                                                            AND count > 0
                                                         ORDER BY store.name ASC", connection))
                 {
                     NpgsqlDataReader reader = command.ExecuteReader();
@@ -84,7 +84,7 @@ namespace NapredniBazi.Controllers
                 }
                 using (var command = new NpgsqlCommand($@"SELECT COUNT(stock.*) FROM stock 
                                                         WHERE stock.product_code = { code }
-                                                        AND stock.cnt > 0", connection))
+                                                        AND stock.count > 0", connection))
                 {
                     NpgsqlDataReader reader = command.ExecuteReader();
                     reader.Read();
@@ -93,7 +93,7 @@ namespace NapredniBazi.Controllers
                 }
                 using (var command = new NpgsqlCommand($@"SELECT stock.* FROM stock 
                                                         WHERE stock.product_code = {code}
-                                                        AND stock.cnt > 0
+                                                        AND stock.count > 0
                                                         LIMIT {pageSize} OFFSET {(page - 1) * pageSize}", connection))
                 {
                     NpgsqlDataReader reader = command.ExecuteReader();
@@ -120,7 +120,7 @@ namespace NapredniBazi.Controllers
             using (var connection = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["postgres"].ConnectionString))
             {
                 connection.Open();
-                using (var command = new NpgsqlCommand($@"SELECT stock.cnt FROM store, stock 
+                using (var command = new NpgsqlCommand($@"SELECT stock.count FROM store, stock 
                                                         WHERE store.id = {model.StoreId}
                                                             AND stock.product_code = {model.Code}", connection))
                 {

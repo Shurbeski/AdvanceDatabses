@@ -9,6 +9,6 @@ namespace NapredniBazi.Models
     {
         public int Store_id { get; set; }
         public int Product_code { get; set; }
-        public int Cnt { get; set; }
+        public int count { get; set; }
     }
 }
